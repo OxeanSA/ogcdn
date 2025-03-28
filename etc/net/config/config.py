@@ -1,0 +1,11 @@
+
+SECRET_KEY = "HNDFjjdvjjnn78i6fvy7nn"
+DEBUG = True
+SESSION_PERMANENT = True
+SESSION_TYPE = "filesystem"
+SESSION_FOLDER = "et/etc/"
+SESSION_COOKIE_PATH = "et/etc/"
+TEMPLATES_AUTO_RELOAD = True
+EXPLAIN_TEMPLATE_LOADING = True
+SEND_FILE_MAX_AGE_DEFAULT = 0
+UPLOAD_FOLDER = "et/uploads/users/posts/images/"
