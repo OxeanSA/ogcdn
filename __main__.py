@@ -248,8 +248,7 @@ def serverhealth():
 
 if __name__=='__main__':
     addr = net.get_ip()
-    port = cxi.encrypt("8000")
-    port2 = cxi.encrypt("8000")
+    port = 80
     if errs != None:
         print(f' errors: ' + str(errs))
     try:
@@ -259,15 +258,11 @@ if __name__=='__main__':
         time.sleep(1)
         print(f'• Ip: ' + addr)
         time.sleep(1)
-        print(f'• Port1: ' + cxi.decrypt(port))
-        time.sleep(1)
-        print(f'• port2: ' + cxi.decrypt(port2))
-        time.sleep(1)
         print(f'• Debug: ' + str(debug))
         time.sleep(1)
         if errs == None:
             print("••Online")
-            server.listen(port=int(cxi.decrypt(port2)), address=addr)
+            server.listen(port=port)
             IOLoop.instance().start()
     # Show errors if server can't start
     except KeyboardInterrupt:
