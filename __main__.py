@@ -8,9 +8,9 @@ from werkzeug.utils import secure_filename
 from tornado.wsgi import WSGIContainer
 from tornado.httpserver import HTTPServer
 from tornado.ioloop import IOLoop
-import et.etc.security.cxi as cxi
-import et.etc.handler as handler
-import et.net.net as net
+import etc.etc.security.cxi as cxi
+import etc.etc.handler as handler
+import etc.net.net as net
 import os
 import sys
 import cv2
