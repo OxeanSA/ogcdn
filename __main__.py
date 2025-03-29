@@ -20,11 +20,6 @@ import timeago, time
 import random
 import string
 
-if sys.platform == 'win32':
-   os.system('cls')
-else:
-   os.system('clear')
-
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 camera = cv2.VideoCapture(0)
